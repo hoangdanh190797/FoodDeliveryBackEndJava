@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3307/osahaneat          # Replace with your database URL
+    username: root                                      # Replace with your database username
+    password: root                                      # Replace with your database password (store securely)
+    driver-class-name: com.mysql.cj.jdbc.Driver         # Use the recommended MySQL Connector/J driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update                              # Adjust based on your schema management preference (see note below)
+      dialect: org.hibernate.dialect.MySQL8Dialect  # Specify the appropriate dialect for MySQL version
+  servlet:
+    multipart:
+      max-file-size: 10MB
+jwt:
+  privateKey: xr//Jw/oHFn9v89Ik9otWCJf4q33nAUtPduz6UW//vU=
+
+fileUpload:
+  rootPath: C:\Users\MrTung\Desktop\uploads
+
+
+
